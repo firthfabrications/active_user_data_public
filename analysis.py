@@ -25,7 +25,7 @@ for column in my_col:
     df[f'{column}'] = (df[column] - minimum) / my_range
 
 #get a sum of all the normalized values 
-df['normalized total'] = df.sum(axis = 1)
+df['normalized total'] = df[my_col].sum(axis = 1)
 
 
 #plot the data
